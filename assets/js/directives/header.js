@@ -1,4 +1,4 @@
-var app = angular.module('core',[]);
+var app = angular.module('core',['ngRoute']);
 app.directive('appHeader', function() {
 	return {
 		restric: 'E',

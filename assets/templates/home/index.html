@@ -28,7 +28,29 @@
 </head>
 <body ng-app="core">
 	<div class="container">
-	<ng-view></ng-view>
+	<header ng-controller="Header" style="position: fixed;z-index: 3;width: 100%;">
+	<app-header></app-header>
+	</header>
+	<div ng-controller="formapp" style="margin-top: -2.6%">
+	<form-app title="title" ng-click="changeheading()"></form-app>
+	</div>
+	<section class="container" ng-controller="Presentation">
+		<div ng-repeat="banner in banners">
+		<presentation content="banner"></presentation>
+		</div>
+	</section>
+	<div class="container-1x flex flex row" style="background: #f4f2f6;">
+	<div class="container pd-2">
+		<figure>
+			<img src="https://cdn.dribbble.com/users/729758/screenshots/4417466/eggspace_4_final_1x.png">
+		</figure>
+	</div>
+	<div class="container pd-2">
+		<h2 class="base-font t-black" style="text-align: center;">Próximamente, Tendremos eShop <br>
+			<small>Podrá comprar en Zellet también</small></h2>
+	</div>
+	</div>
+	<footer-app></footer-app>
 </div>
 	<!-- Directives -->
 	<script src="assets/js/directives/header.js"></script>
@@ -41,7 +63,5 @@
 	<script src="assets/js/controllers/Presentation.js"></script>
 	<!-- Routes -->
 	<script src="assets/js/routes/index.js"></script>
-	<!-- AJAX -->
-	<script src="assets/js/ajax/form/index.js"></script>
 </body>
 </html>

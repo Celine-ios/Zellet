@@ -5,58 +5,67 @@
 			</h1>
 		</div>
 		<div class="container flex flex-center" style="padding-bottom: 8%;">
-			<form action="" class="form coral form-font t-white pd-2" enctype="multipart/form-data">
+			<form class="form coral form-font t-white pd-2" enctype="multipart/form-data" name="form">
 				<div class="flex flex-row pd-2">
 					<div class="flex flex-col pd-2">
 						<label for="name">Nombre</label>
-						<input type="text" name="name" placeholder="Nombre">
+						<input type="text" name="name" placeholder="Nombre" ng-model="name" required>
+						<span ng-show="form.name.$touched && form.name.$invalid" style="color: var(--danger);">El Nombre es Requerido</span>
 					</div>
 					<div class="flex flex-col pd-2">
 						<label for="lastname">Apellido</label>
-						<input type="text" name="lastname" placeholder="Apellido">
+						<input type="text" name="lastname" placeholder="Apellido" ng-model="lastname" required>
+						<span ng-show="form.lastname.$touched && form.lastname.$invalid" style="color: var(--danger);">El Apellido es Requerido</span>
 					</div>
 				</div>
 				<div class="flex flex-row pd-2">
 					<div class="flex flex-col pd-2">
 						<label for="name">Teléfono</label>
-						<input type="tel" name="name" placeholder="Teléfono">
+						<input type="tel" name="phone" placeholder="Teléfono" ng-model="phone" required>
+						<span ng-show="form.phone.$touched && form.phone.$invalid" style="color: var(--danger);">El Teléfono es Requerido</span>
 					</div>
 					<div class="flex flex-col pd-2">
 						<label for="lastname">Email</label>
-						<input type="email" name="email" placeholder="Email">
+						<input type="email" name="mail" placeholder="Email" ng-model="mail" required>
+						<span ng-show="form.mail.$touched && form.mail.$invalid" style="color: var(--danger);">El Email es Requerido</span>
 					</div>
 				</div>
 				<div class="flex flex-row pd-2">
 					<div class="flex flex-col pd-2">
 						<label for="name">Nombre Producto</label>
-						<input type="text" name="product" placeholder="Nombre Producto">
+						<input type="text" name="product" placeholder="Nombre Producto" ng-model="product" required>
+						<span ng-show="form.product.$touched && form.product.$invalid" style="color: var(--danger);">El Producto es Requerido</span>
 					</div>
 					<div class="flex flex-col pd-2">
 						<label for="lastname">Imagen Producto</label>
-						<input type="file" name="imagen">
+						<input type="file" name="image" ng-model="image" required>
+						<span ng-show="form.image.$touched && form.image.$invalid" style="color: var(--danger);">Imagen Requerida</span>
 					</div>
 				</div>
 				<div class="flex flex-row pd-2">
 					<div class="flex flex-col pd-2" style="width: 45%;">
 						<label for="name">Pago</label>
-						<select name="moneda">
-							<option value="bolivares">Bolívares (Bsf)</option>
+						<select name="pay" ng-model="pay">
+							<option value="bolivares" default>Bolívares (Bsf)</option>
 							<option value="dólares">Dólares (USD)</option>
 						</select>
+						<span ng-show="form.pay.$touched && form.pay.$invalid" style="color: var(--danger);">Moneda es Requerida</span>
 					</div>
 					<div class="flex flex-col pd-2">
 						<label for="lastname">Precio de Venta</label>
-						<input type="number" name="precio" placeholder="Precio">
+						<input type="number" name="price" placeholder="Precio" ng-model="price" required>
+						<span ng-show="form.price.$touched && form.price.$invalid" style="color: var(--danger);">El Precio es Requerido</span>
 					</div>
 				</div>
 				<div class="flex flex-row pd-2">
 					<div class="flex flex-col pd-2" style="width: 100%;">
 						<label for="name">Comentarios sobre el Producto</label>
-						<textarea name="notas" cols="30" rows="10" placeholder="Notas, Apuntes, Comentarios"></textarea>
+						<textarea name="notes" cols="30" rows="10" placeholder="Notas, Apuntes, Comentarios" ng-model="notes" required></textarea>
+						<span ng-show="form.notes.$touched && form.notes.$invalid" style="color: var(--danger);">Las Notas son Requeridas</span>
 					</div>
 				</div>
-				<div class="flex flex-row pd-2">
-				<button type="submit" class="btn btn-form">Enviar</button>
+				<div class="flex flex-row pd-4">
+				<button class="btn btn-form" ng-click="sendRequest()">Enviar</button>
 				</div>
 			</form>
 		</div>
