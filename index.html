@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BuyNow</title>
+	<!-- AngularJs -->
+	<script src="node_modules/angular/angular.js"></script>
+	<!-- Google Muli Font -->
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="assets/css/index.css">
+	<link rel="stylesheet" href="assets/css/fonts/index.css">
+	<link rel="stylesheet" href="assets/css/headings/index.css">
+	<link rel="stylesheet" href="assets/css/colors/index.css">
+	<link rel="stylesheet" href="assets/css/text-colors/index.css">
+	<link rel="stylesheet" href="assets/css/paddinner/index.css">
+	<link rel="stylesheet" href="assets/css/containers/index.css">
+	<link rel="stylesheet" href="assets/css/flex/index.css">
+	<link rel="stylesheet" href="assets/css/forms/index.css">
+</head>
+<body ng-app="core">
+	<div class="container">
+	<header ng-controller="Header">
+	<app-header></app-header>
+	</header>
+	<div ng-controller="formapp" style="margin-top: -2.6%">
+	<form-app title="title" ng-click="changeheading()"></form-app>
+	</div>
+	</div>
+	<!-- Directives -->
+	<script src="assets/js/directives/header.js"></script>
+	<script src="assets/js/directives/formapp.js"></script>
+	<!-- Controllers -->
+	<script src="assets/js/controllers/Header.js"></script>
+	<script src="assets/js/controllers/FormApp.js"></script>
+</body>
+</html>

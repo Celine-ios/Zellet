@@ -1,0 +1,10 @@
+form {
+	box-shadow: #00000066 0px 0px 10px;
+}
+label {
+	line-height: 2em;
+}
+input {
+	padding: 4%;
+	border: 0;
+}
