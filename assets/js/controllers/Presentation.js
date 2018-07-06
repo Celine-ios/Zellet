@@ -14,7 +14,15 @@ app.controller('Presentation', function($scope) {
 			wp: '+58 416-7952491'
 		}, 
 		secondTitle: 'Rellena El Formulario y te Contactaremos',
-		secondSmall: 'A tu correo para vender tu producto'
+		secondSmall: 'Serás contactado por correo, tendremos una semana para contactarte por el mismo medio, con un comprador para tu producto',
+		steps: {
+			first: 'Rellena el Formulario con tu información',
+			sFirst: 'Incluyendo la forma en que te pagaremos (Bsf. o USD)',
+			second: 'Espera Nuestro Correo en una Semana',
+			sSecond: 'Y haz el envío del producto',
+			third: 'Después de haber enviado el producto',
+			sThird: 'Se te liberará el pago en la moneda de tu preferencia'
+		}
 	}
 	];
 });
