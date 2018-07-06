@@ -1,0 +1,30 @@
+.btn {
+	border-radius: 1%;
+	border: 0;
+	font-size: 1rem;
+	color: #fff;
+	box-shadow: #00000012 0px 0px 10px;
+}
+.btn-form {
+	background: #fff;
+	color: var(--coral);
+	padding: 2%;
+	width: 33%;
+	outline: 1px solid #ddd;
+	font-family: 'Dosis', sans-serif;
+}
+.btn-form:focus {
+	color: white;
+	outline: none;
+	background: var(--coral);
+	animation: borderanimated 2s infinite;
+}
+
+@keyframes borderanimated {
+	from {
+		border: 2px solid #fff;
+	}
+	to {
+		border: 2px solid var(--coral);
+	}
+}

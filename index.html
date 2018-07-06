@@ -17,21 +17,34 @@
 	<link rel="stylesheet" href="assets/css/containers/index.css">
 	<link rel="stylesheet" href="assets/css/flex/index.css">
 	<link rel="stylesheet" href="assets/css/forms/index.css">
+	<link rel="stylesheet" href="assets/css/buttons/index.css">
+	<!-- Devices Stylesheet -->
+	<link rel="stylesheet" href="assets/devices.css/dist/devices.css">
 </head>
 <body ng-app="core">
 	<div class="container">
-	<header ng-controller="Header">
+	<header ng-controller="Header" style="position: fixed;z-index: 3;width: 100%;">
 	<app-header></app-header>
 	</header>
 	<div ng-controller="formapp" style="margin-top: -2.6%">
 	<form-app title="title" ng-click="changeheading()"></form-app>
 	</div>
+	<section class="container" ng-controller="Presentation">
+		<div ng-repeat="banner in banners">
+		<presentation content="banner"></presentation>
+		</div>
+	</section>
+	<div>
+		
+	</div>
 	</div>
 	<!-- Directives -->
 	<script src="assets/js/directives/header.js"></script>
 	<script src="assets/js/directives/formapp.js"></script>
+	<script src="assets/js/directives/presentation.js"></script>
 	<!-- Controllers -->
 	<script src="assets/js/controllers/Header.js"></script>
 	<script src="assets/js/controllers/FormApp.js"></script>
+	<script src="assets/js/controllers/Presentation.js"></script>
 </body>
 </html>
