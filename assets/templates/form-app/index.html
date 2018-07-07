@@ -5,66 +5,58 @@
 			</h1>
 		</div>
 		<div class="container flex flex-center" style="padding-bottom: 8%;">
-			<form action="" class="form form-font coral t-white" style="padding: 4% 10%;border-radius: 1%;">
-				<div class="flex flex-row">
+			<form action="" class="form coral form-font t-white pd-2" enctype="multipart/form-data">
+				<div class="flex flex-row pd-2">
 					<div class="flex flex-col pd-2">
 						<label for="name">Nombre</label>
 						<input type="text" name="name" placeholder="Nombre">
 					</div>
 					<div class="flex flex-col pd-2">
-						<label for="">Apellido</label>
+						<label for="lastname">Apellido</label>
 						<input type="text" name="lastname" placeholder="Apellido">
 					</div>
 				</div>
-				<div class="flex flex-row">
+				<div class="flex flex-row pd-2">
 					<div class="flex flex-col pd-2">
-						<label for="">Teléfono</label>
-						<input type="tel" name="telephone" placeholder="Teléfono">
+						<label for="name">Teléfono</label>
+						<input type="tel" name="name" placeholder="Teléfono">
 					</div>
 					<div class="flex flex-col pd-2">
-						<label for="">Correo Electrónico</label>
+						<label for="lastname">Email</label>
 						<input type="email" name="email" placeholder="Email">
 					</div>
 				</div>
-				<div class="flex flex-row">
+				<div class="flex flex-row pd-2">
 					<div class="flex flex-col pd-2">
-						<label for="">Nombre Producto</label>
-						<input type="text" name="product_name" placeholder="Producto">
+						<label for="name">Nombre Producto</label>
+						<input type="text" name="product" placeholder="Nombre Producto">
 					</div>
 					<div class="flex flex-col pd-2">
-						<label for="">Apellido</label>
-						<input type="text" name="lastname" placeholder="Apellido">
-					</div>
-				</div>
-				<div class="flex flex-row">
-					<div class="flex flex-col pd-2">
-						<label for="">Apellido</label>
-						<input type="text" name="lastname" placeholder="Apellido">
-					</div>
-					<div class="flex flex-col pd-2">
-						<label for="">Apellido</label>
-						<input type="text" name="lastname" placeholder="Apellido">
+						<label for="lastname">Imagen Producto</label>
+						<input type="file" name="imagen">
 					</div>
 				</div>
-				<div class="flex flex-row">
-					<div class="flex flex-col pd-2">
-						<label for="">Apellido</label>
-						<input type="text" name="lastname" placeholder="Apellido">
+				<div class="flex flex-row pd-2">
+					<div class="flex flex-col pd-2" style="width: 45%;">
+						<label for="name">Pago</label>
+						<select name="moneda">
+							<option value="bolivares">Bolívares (Bsf)</option>
+							<option value="dólares">Dólares (USD)</option>
+						</select>
 					</div>
 					<div class="flex flex-col pd-2">
-						<label for="">Apellido</label>
-						<input type="text" name="lastname" placeholder="Apellido">
-					</div>
-				</div>
-				<div class="flexflex-row">
-					<div class="flex flex-col pd-2">
-						<button class="btn btn-form">Enviar</button>
+						<label for="lastname">Precio de Venta</label>
+						<input type="number" name="precio" placeholder="Precio">
 					</div>
 				</div>
-				<div class="flexflex-row">
-					<div class="flex flex-col pd-2">
-						<span style="font-family: 'Muli',sans-serif;">Zellet</span>
+				<div class="flex flex-row pd-2">
+					<div class="flex flex-col pd-2" style="width: 100%;">
+						<label for="name">Comentarios sobre el Producto</label>
+						<textarea name="notas" cols="30" rows="10" placeholder="Notas, Apuntes, Comentarios"></textarea>
 					</div>
+				</div>
+				<div class="flex flex-row pd-2">
+				<button type="submit" class="btn btn-form">Enviar</button>
 				</div>
 			</form>
 		</div>
