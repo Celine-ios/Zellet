@@ -64,8 +64,8 @@
 						<span ng-show="form.notes.$touched && form.notes.$invalid" style="color: var(--danger);">Las Notas son Requeridas</span>
 					</div>
 				</div>
-				<div class="flex flex-row pd-4">
-				<button class="btn btn-form" ng-click="sendRequest()">Enviar</button>
+				<div class="flex flex-row pd-4" ng-controller="formapp">
+				<button type="button" class="btn btn-form" ng-click="sendRequest()">Enviar</button>
 				</div>
 			</form>
 		</div>

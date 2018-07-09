@@ -1,4 +1,4 @@
-var app = angular.module('core',['ngRoute']);
+var app = angular.module('core',['ngRoute','angularFileUpload']);
 app.directive('appHeader', function() {
 	return {
 		restric: 'E',
