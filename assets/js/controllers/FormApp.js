@@ -24,7 +24,7 @@ app.controller('formapp', function($scope, $http) {
 			price: precio,
 			notes: notas
 		}).then(function(response) {
-			console.log(response);
+			location.href='#!success';
 		}, function(response) {
 			alert('Oouops');
 			alert(response);

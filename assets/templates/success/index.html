@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="container">
+	<div class="container" style="text-align: center;">
+	<h1 class="form-font t-black heading-1x">Petición Enviada <br>
+		<small class="t-grey">Te estaremos contactando por correo en cuestión de una semana o menos</small></h1>
+		</div>
+	<div class="container flex flex-row pd-4" style="justify-content: space-between;margin-right: 7%;" ng-controller="Presentation">
+		<figure class="flex flex-col flex-center" style="margin: 0;">
+		<img src="{{banners[0].svg.fb}}" alt="facebook" class="pd-4" style="width: 22%;">
+		<span style="text-align: center;" class="base-font">{{banners[0].networks.fb}}</span>
+		</figure>
+		<figure class="flex flex-col flex-center" style="margin: 0;">
+		<img src="{{banners[0].svg.ig}}" alt="instagram" class="pd-4" style="width: 22%;">
+		<span style="text-align: center;" class="base-font">{{banners[0].networks.ig}}</span>
+		</figure>
+		<figure class="flex flex-col flex-center" style="margin: 0;">
+		<img src="{{banners[0].svg.wp}}" alt="whatsapp" class="pd-4" style="width: 45%;">
+		<span style="text-align: center;" class="base-font">{{banners[0].networks.wp}}</span>
+		</figure>
+	</div>
+	<div class="container" style="text-align: center;margin-bottom: 33%;">
+			<a href="#/!" class="t-coral base-font" style="text-decoration: none;">Volver</a>
+		</div>
+	<footer class="container" style="text-align: center;">
+		<h2 class="base-font t-coral">Zellet</h2>
+	</footer>
+</div>
